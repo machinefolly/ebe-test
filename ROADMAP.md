@@ -79,10 +79,10 @@ Extend the target matrix once the core pipeline is solid.
 
 Take the local pipeline to a host.
 
-- [ ] GitHub Actions workflow: matrix build across `linux/amd64`, `windows/amd64`, `darwin/arm64`
-- [ ] Upload `releases/` artifacts to the workflow run
+- [x] GitHub Actions workflow: matrix build across `linux/amd64`, `windows/amd64`, `darwin/arm64`
+- [x] Upload `releases/` artifacts to the workflow run
 - [ ] Tag-triggered release with versioned artifact names (drop `latest` for tagged builds)
-- [ ] golangci-lint + govulncheck as required CI gates
+- [x] golangci-lint + govulncheck as required CI gates
 
 ### Deferred
 - [ ] Automated semver tagging and changelog generation. *(Nice to have; not needed for the core promise.)*
