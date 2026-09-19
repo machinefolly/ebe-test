@@ -2,6 +2,17 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Run App",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "python3 scripts/run_artifact.py",
+      "windows": {
+        "command": "python scripts/run_artifact.py"
+      },
+      "cwd": "${workspaceFolder}",
+      "presentation": {"group": "run", "order": 1}
+    },
+    {
       "name": "Ebitengine Pipeline: Governance Run",
       "type": "node-terminal",
       "request": "launch",

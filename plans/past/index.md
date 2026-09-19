@@ -2,5 +2,5 @@
 
 Format: `last_modified | path | title | summary`
 
-2026-08-24-13-05-22 | plans/past/2026-08-19-10-55-32_build-pipeline-implementation.md | Implement Ebitengine Build Pipeline | Replace the Markdown-repair scaffold with a no-flag cross-platform build pipeline that compiles Ebitengine apps for all feasible local targets and validates produced artifacts.
-2026-08-23-23-25-59 | plans/past/2026-08-17-14-30-00_bootstrap-agentic-pipelines.md | Bootstrap Agentic Pipelines host integration | Add the non-running host scaffold required to use Agentic Pipelines for this Ebitengine CI/CD boilerplate.
+2026-09-18-16-00-00 | plans/past/2026-09-18-160000_phase1-verify-build.md | Phase 1 Verification | Run make build on Linux host, verify artifacts, confirm pipeline works end-to-end.
+2026-09-18-16-30-00 | plans/past/2026-09-18-163000_phase2-playbooks.md | Phase 2 — Playbooks + editor integration | Write user-facing playbooks for common forker tasks, add VS Code integration, create scripts/README.md.

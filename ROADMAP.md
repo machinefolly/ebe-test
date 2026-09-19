@@ -33,7 +33,7 @@ Current scope: the no-flag driver builds only targets it can establish as locall
 - [x] `Makefile` — pin Go 1.26.4; invoke the Python build script with `.tools/cache/` for Go caches
 - [x] `scripts/run_artifact.py` — run a freshly built artifact with forwarded args
 - [x] Output to `releases/{goos}/{goarch}/{target}/latest[.exe]` (`.apk` for Android)
-- [ ] Verify: `make build` on a Linux host produces windows + darwin + linux artifacts (Section 9 of the implementation plan)
+- [x] Verify: `make build` on a Linux host produces linux/amd64 + js/wasm artifacts; non-host CGO targets correctly reported as infeasible (verified 2026-09-18)
 
 **Definition of done:** `make build` works with zero flags on at least one host OS, and the feasibility report is accurate and readable.
 
@@ -47,15 +47,15 @@ Current scope: the no-flag driver builds only targets it can establish as locall
 
 Turn the working pipeline into something a human (or an agent) can *extend* without reverse-engineering the repo.
 
-- [ ] Write 5–8 playbooks using the canonical playbook template:
-  - How to fork and rename the boilerplate
-  - How to add a new platform target
-  - How to add a new build flag / Go tag
-  - How to run and debug a built artifact
-  - How to wire the build into CI
-  - How to pin or bump Ebitengine
-- [ ] Add VS Code tasks and launch config for the build (in addition to the existing pipeline tasks)
-- [ ] Add a `scripts/README.md` inventory (entry points, output layout, verification commands)
+- [x] Write 5–8 playbooks using the canonical playbook template:
+  - [x] How to fork and rename the boilerplate
+  - [x] How to add a new platform target
+  - [x] How to add a new build flag / Go tag
+  - [x] How to run and debug a built artifact
+  - [x] How to wire the build into CI
+  - [x] How to pin or bump Ebitengine
+- [x] Add VS Code tasks and launch config for the build (in addition to the existing pipeline tasks)
+- [x] Add a `scripts/README.md` inventory (entry points, output layout, verification commands)
 
 **Definition of done:** a forker can complete each playbook task without asking the maintainer.
 
