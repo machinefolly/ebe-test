@@ -65,10 +65,10 @@ Turn the working pipeline into something a human (or an agent) can *extend* with
 
 Extend the target matrix once the core pipeline is solid.
 
-- [ ] Android target via gomobile (`android/arm64`, `android/armeabi.v7a`)
-- [ ] iOS target via gomobile (`ios/arm64`) — host: macOS only
-- [ ] Headless / smoke-test target (no window) for CI sanity checks
-- [ ] Optional: WebAssembly target if the toolchain story is clean
+- [?] Android target via gomobile (`android/arm64`, `android/armeabi.v7a`) — deferred: needs Android NDK
+- [?] iOS target via gomobile (`ios/arm64`) — deferred: needs macOS + Xcode
+- [-] Headless / smoke-test target — not feasible: Ebitengine requires CGO/GLFW, no headless mode
+- [x] Optional: WebAssembly target — builds successfully, HTML wrapper in `releases/js/wasm/app/`
 
 ### Deferred
 - [ ] Patched-gomobile helper (apparat uses a local patch) — revisit only if the stock gomobile path proves flaky.
